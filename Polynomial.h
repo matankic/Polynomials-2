@@ -27,6 +27,12 @@ public:
 	Polynomial & operator*(const double) const;
 	friend ostream & operator<<(ostream &, const Polynomial &);
 	friend Polynomial & operator*(const double, const Polynomial &);
+
+	// p1[index] = value
+	double& operator[](int const);
+
+	// value = p1[index]
+	double operator[](int const) const;
 };
 
 #endif

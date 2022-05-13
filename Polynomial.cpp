@@ -89,6 +89,8 @@ int Polynomial::getDegree() const{
 	return cnt;
 }
 double Polynomial::getCoeff(int index) const{
+	if (index < 0 || index > degree)
+		return -1234.56;
 	return coeff[index];
 }
 ostream &operator<<(ostream &print, const Polynomial &p){
@@ -185,4 +187,14 @@ Polynomial & Polynomial::operator*(const double c) const{
 }
 Polynomial & operator*(const double c, const Polynomial &p){
 	return p*c;
+}
+
+
+
+double& Polynomial::operator[](int const index) {
+	return this->coeff[index];
+}
+
+double Polynomial::operator[](int const index) const {
+	return getCoeff(index);
 }
