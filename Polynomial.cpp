@@ -192,11 +192,10 @@ Polynomial & operator*(const double c, const Polynomial &p){
 }
 
 
-
 double& Polynomial::operator[](int const index) {
 	return this->coeff[index];
 }
 
-double Polynomial::operator[](int const index) const {
+const double Polynomial::operator[](int const index) const {
 	return getCoeff(index);
 }
