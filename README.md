@@ -5,6 +5,6 @@ You might consider make some changes before submitting these files in order to a
 
 **Disclaimer : By relying those files, the author of this repository, Matan, takes no responsibility for all possible consequences and ensures no grade.
 
-תן כוכב,
+אם זה עזר לך תתן כוכב ⭐
 
 Thanks!
